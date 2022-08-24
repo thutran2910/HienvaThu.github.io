@@ -1,0 +1,335 @@
+body{
+    margin: 0;
+}
+div a#gototop{
+    font-size: 30px;
+    text-decoration: none;
+    display: block;
+    padding: 7px 7px;
+    background-color: rgba(105, 135, 241, 0.6);
+    color: white;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 9999;
+}
+.contenter{
+    max-width: 990px;
+    margin: 0px auto;
+}
+.header{
+    background: linear-gradient( blue, lightblue)
+}
+nav{
+    display: flex;
+    justify-content:space-between;
+    justify-items: right;
+}
+.main_menu{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.header img{
+    max-width: 200px;
+    height: auto;
+}
+.main_menu li{
+    position: relative;
+}
+.main_menu li a{
+    color: white;
+    font-size: 20px;
+    display: block;
+    padding: 18px 20px;
+    text-decoration: none;
+    text-align: left;
+}
+.main_menu li a:hover{
+    color: black;
+    font-weight: bold;
+}
+.main_menu ul.sub_menu{
+    position: absolute;
+    padding: 13px 0px;
+    list-style-type: none;
+    width: 150px;
+    background-color: rgb(91, 103, 241);
+    display: none;
+}
+.main_menu li:hover ul.sub_menu{
+    display: block;
+}
+.main_menu ul.sub_menu a{
+    padding: 8px 10px;
+    border-bottom: 1px solid rgb(111, 108, 108);
+    text-align: center;
+}
+.main_menu ul.sub_menu li:last-child a{
+    border: none;
+}
+.main_menu ul.sub_menu li:hover a{
+    border-bottom: rgb(61, 18, 18);
+}
+.main_menu> li> a::before{
+    content: " ";
+    height: 4px;
+    width: 0;
+    background-color: rgb(240, 53, 53);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.main_menu >li:hover> a::before{
+    width: 100%;
+}
+.book{
+    margin: 30px;
+}
+.book input{
+    padding: 10px;
+}
+.book> div{
+    background-color: rgb(167, 225, 247);
+    padding: 1rem 1rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px blue;
+}
+.book h1{
+    text-align: center;
+    animation: doimau 2s infinite;
+    text-shadow: 2px 2px 3px black;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.items{
+    display: flex;
+    justify-content: space-around;
+}
+.items div a:last-child{
+   display: block;
+   background-color: rgb(73, 90, 245);
+   color: white;
+   border-radius: 10px;
+   padding: 15px;
+   text-decoration: none;
+   font-weight: bolder;
+}
+.items div a:last-child:hover{
+    background: linear-gradient(rgb(227, 55, 49),rgb(235, 76, 103));
+}
+.book div div:last-child{
+    padding-top: 15px;
+}
+table{
+    border-collapse: collapse;
+    width: 90%;
+    margin:0 auto;
+    height: 300px;
+}
+table,tr,td{
+    border: 1px dashed black;
+    text-align: center;
+    font-weight: bolder;
+}
+table tr:first-child{
+    background-color: rgb(106, 133, 243);
+    font-size:20px;
+    color: aliceblue;
+}
+.datcauhoi{
+    display: flex;
+    border: 2px solid grey;
+    width: 90%;
+    margin:15px auto;
+    position: relative;
+}
+.datcauhoi .main{
+    display: flex;
+}
+.datcauhoi .icon{
+    font-size: 30px;
+    color: blue;
+    padding: 12px;
+    animation: scale 2s infinite;
+}
+.datcauhoi .button {
+    color: rgb(100, 100, 245);
+    border: 2px solid rgb(100, 100, 245);
+    border-radius: 5px;
+    padding: 15px 25px;
+    height: 22px;
+    display: block;
+    text-decoration: none;
+    position: absolute;
+    right: 15px;
+    top: 18px;
+}
+.datcauhoi .button:hover{
+    background-color: rgb(241, 234, 234);
+    font-weight: bolder;
+    box-shadow: 0 0 10px red;
+}
+.model{
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    display: none;
+}
+.table{
+    border: 2px solid blue;
+    border-radius: 5px;
+    padding: 20px;
+    height: 420px;
+    background-color: rgba(99, 99, 235, 0.95);
+    position: fixed;
+    overflow: hidden;
+    top: 10%;
+    left: 30%;
+}
+.table textarea{
+    max-width: 450px;
+    max-height:150px;
+}
+.table button{
+    background-color: rgb(164, 237, 237);
+    padding:10px 30px;
+    margin-top: 15px;
+    margin-left: 35%;
+}
+.table p{
+    color: white;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px red;
+}
+.table .close{
+    color: brown;
+    font-size: 30px;
+    right: 3px;
+    top: 3px;
+    position: absolute;
+}
+.flex{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+.flex .h1{
+    background-color: rgb(124, 233, 241);
+    padding: 15px;
+}
+.flex .ques{
+    background-color:rgb(211, 241, 243);
+    line-height: 40px;
+}
+.flex .ques .que{
+    padding: 10px;
+    background-color: rgb(176, 235, 239);
+    position: relative;
+}
+.flex .ques .que .label{
+    background-color: rgb(140, 148, 240);
+    color: white;
+    position: relative;
+    padding: 5px;
+    font-weight: bolder;
+}
+.flex .ques .que .label::before{
+    content:'+';
+    position: absolute;
+    right: 20px;
+    top:55px;
+    transform: translateY(-50px);
+    font-size: 1.5em;
+}
+.flex .ques .que.active .label::before{
+    content: '-';
+}
+.flex .ques .que .content{
+    position: relative;
+    background-color: white;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.flex .ques .que.active .content{
+    height: 40px;
+    padding: 5px;
+}
+.infos li a{
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+}
+.info ul{
+    list-style-type: none;
+}
+.infos{
+    display: flex;
+    justify-content: space-between;
+    line-height: 20px;
+    background-color: lightslategray;
+    width: 100%;
+}
+.infos .info li:first-child{
+    font-weight: bolder;
+}
+footer{
+    background-color: black;
+    color: wheat;
+    font-size: 15px;
+}
+footer span{
+    position: relative;
+     animation: dichuyen 10s infinite;
+}
+@keyframes dichuyen{
+    from{
+        left: 0;
+    }
+    to{
+        left: 100%;
+    }
+}
+@keyframes doimau{
+    25%{
+        color: red;
+    }
+    50%{
+        color: yellow;
+    }
+    100%{
+        color: blue;
+    }
+}
+@keyframes scale{
+    from{
+        transform: scale(1.3);
+    }
+    to{
+        transform: scale(0.8);
+    }
+}
+@media screen and (max-width:650px)
+{
+    .contenter{
+        flex-direction: column;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .flex div{
+        width: 100%;
+    }
+    .infos{
+        flex-direction: column;
+    }
+    .flex .ques .que.active .content{
+        height: 40px;
+        line-height: 20px;
+    }
+}

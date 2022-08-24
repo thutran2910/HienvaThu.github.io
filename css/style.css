@@ -1,0 +1,261 @@
+body{
+    margin: 0;
+    background: linear-gradient(rgb(220, 223, 241),rgb(194, 236, 194),rgb(241, 241, 220));
+}
+div a#gototop{
+    font-size: 30px;
+    text-decoration: none;
+    display: block;
+    padding: 7px 7px;
+    background-color: rgb(42, 229, 42,0.6);
+    color: white;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 9999;
+}
+.contenter{
+    max-width: 990px;
+    margin: 0px auto;
+    display: flex;
+    justify-content:space-between;
+    justify-items: right;
+}
+.header{
+    background: linear-gradient(blue,rgb(37, 188, 239),white);
+}
+.main_menu{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 200px;
+    height: auto;
+}
+.main_menu li{
+    position: relative;
+}
+.main_menu li a{
+    color: white;
+    font-size: 20px;
+    display: block;
+    padding: 18px 20px;
+    text-decoration: none;
+}
+.main_menu li a:hover{
+    color: black;
+    font-weight: bold;
+}
+.main_menu ul.sub_menu{
+    position: absolute;
+    padding: 13px 0px;
+    list-style-type: none;
+    width: 150px;
+    background-color: rgb(37, 113, 235);
+    display: none;
+}
+.main_menu li:hover ul.sub_menu{
+    display: block;
+}
+.main_menu ul.sub_menu a{
+    padding: 8px 10px;
+    border-bottom: 1px solid rgb(111, 108, 108);
+    text-align: center;
+}
+.main_menu ul.sub_menu li:last-child a{
+    border: none;
+}
+.main_menu ul.sub_menu li:hover a{
+    border-bottom: rgb(61, 18, 18);
+}
+.main_menu> li> a::before{
+    content: " ";
+    height: 4px;
+    width: 0;
+    background-color: rgb(240, 53, 53);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.main_menu >li:hover> a::before{
+    width: 100%;
+}
+div.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+h1{
+    padding-top: 50px;
+    font-size: 40px;
+    text-transform: uppercase;
+    color:rgb(47, 216, 231);
+    text-shadow: 0px 0px 5px #000000;
+    text-indent: 7em;
+    animation: doimau 1s infinite;
+}
+#bd{
+    font-size: 18px;
+}
+#bd >p{
+    background-color: bisque;
+    color: rgb(43, 95, 226);
+    border: 3px dotted red;
+    padding: 15px 20px;
+    border-radius: 15px 15px;
+    text-shadow: 0.5px 0.5px 0.5px rgb(228, 46, 46);
+    animation: toborder 2s infinite;
+}
+#bd .subj{
+    display: flex;
+    justify-content: center;
+}
+#bd .subj section{
+    width: 45%;
+    margin: 7px;
+    background-color: rgb(246, 230, 232);
+    color: darkslategray;
+    border: 2px solid darkcyan;
+    border-radius: 5px 5rem 5px 5rem;
+    padding: 1rem;
+    box-shadow: 0px 0px 12px #000;
+}
+#bd li{
+    list-style-type: none;
+}
+.conv{
+    background-color: black;
+    width: 95%;
+    margin: 0 auto;
+    border-radius:5px ;
+}
+.conv ul div{
+    background-color: rgb(171, 239, 216);
+    color: green;
+    text-shadow: 3px blue;
+    border: 2px dashed green;
+    width: 20%;
+    border-radius: 1rem;
+    padding: 10px;
+}
+ul.lido{
+    line-height: 50px;
+}
+ul.lido >li{
+    font-weight: bolder;
+}
+ul.con li{
+    font-weight: lighter;
+    line-height: 30px;
+}
+div.around{
+    display: inline-flex;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex div{
+    width: 23%;
+    margin: 1%;
+}
+h2{
+    text-indent: 1.5rem;
+    color: rgb(42, 39, 96);
+    font-family:  'Arial Narrow Bold';
+}
+.around{
+    flex-direction: column;
+}
+.around span{
+    color: gray;
+}
+.infos li a{
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+}
+.infos{
+    display: flex;
+    justify-content: space-between;
+    line-height: 20px;
+    background-color: lightslategray;
+    width: 100%;
+}
+.infos .info li:first-child{
+    font-weight: bolder;
+}
+footer{
+    background-color: black;
+    color: wheat;
+    font-size: 15px;
+}
+footer span{
+    position: relative;
+    animation: dichuyen 15s infinite;
+}
+@keyframes dichuyen{
+    from{
+        left: 0;
+    }
+    to{
+        left: 100%;
+    }
+}
+@keyframes doimau{
+    0%{
+        color: blue;
+    }
+    25%{
+        color:red;
+    }
+    50%{
+        color: green;
+    }
+    75%{
+        color: brown;
+    }
+}
+@keyframes toborder{
+    from{
+        border: dashed;
+    }
+    to{
+        border: solid;
+        color: darkmagenta;
+    }
+}
+@media screen and (max-width:650px)
+{
+    .contenter{
+        flex-direction: column;
+    }
+    .infos{
+        flex-direction: column;
+    }
+    h1{
+        padding-top: 75px;
+        font-size: 30px;
+        text-align: center;
+    }
+    #bd .subj section{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    .subj{
+        flex-direction: column;
+    }
+    .lido.flex{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .conv ul div{
+        width: 40%;
+    }
+}
+
+
